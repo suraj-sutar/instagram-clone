@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #90e0ef, #caf0f8);
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 450px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.item1 {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.5px solid rgba(240, 239, 239, 0.479);
+  overflow: hidden;
+}
+
+.item1 .logo {
+  padding: 0 25px;
+}
+
+.item1 .logo button {
+  border: none;
+  background: none;
+  font-family: "Lobster", sans-serif;
+  font-family: "Pacifico", cursive;
+  font-size: 20px;
+  font-weight: 400;
+}
+.item1 .add-msg {
+  padding: 0 25px;
+}
+
+.item1 .add-msg i {
+  padding: 0 5px;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.item2 {
+  display: flex;
+  margin: 7px 5px;
+  overflow-x: hidden;
+}
+
+.item2 .stories {
+  display: flex;
+}
+
+.item2 .stories img {
+  margin: 2px 10px;
+  border: 3px solid rgb(214, 211, 211);
+  border-radius: 50%;
+}
+
+.item3 {
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  overflow: scroll;
+}
+.item3::-webkit-scrollbar {
+  width: 1px;
+}
+
+.item3 .profile-name-photo {
+  margin: 5px 20px;
+  display: flex;
+}
+
+.item3 .profile-name-photo img {
+  border-radius: 50%;
+}
+
+.item3 .profile-name-photo h4 {
+  display: block;
+  margin: 0 15px;
+  font-size: 10px;
+}
+
+.item3 .profile-name-photo h5 {
+  font-size: 10px;
+  margin: 2px 15px;
+  color: rgb(90, 88, 88);
+}
+
+.item3 .profile-name-photo .music {
+  display: flex;
+  align-items: center;
+}
+.music i {
+  font-size: 8px;
+  margin: 0 0 0 15px;
+}
+
+.music h6 {
+  font-size: 8px;
+  margin: 0 5px;
+}
+
+.item3 .post {
+  margin: 5px;
+}
+
+.item3 .like-share-comment {
+  display: flex;
+  font-size: 20px;
+  justify-content: space-between;
+  margin: 5px 15px;
+}
+
+.item3 .like-share-comment .like i {
+  margin: 0 5px;
+}
+
+.item3 .like-share-comment .save i {
+  margin: 0 5px;
+}
+
+.item3 .content {
+  margin: 5px 20px;
+}
+
+.item4 {
+  display: flex;
+  height: 50px;
+  justify-content: space-around;
+  align-items: center;
+
+  background-color: rgba(245, 245, 245, 0.582);
+}
+
+.item4 i {
+  display: inline-block;
+  padding: 0 30px;
+  font-size: 20px;
+}

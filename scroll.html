@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow-x: scroll;
+        white-space: nowrap;
+      }
+
+      .story-frame {
+        display: inline-block;
+        width: 100vw;
+        height: 100vh;
+        background-color: #eee;
+        box-sizing: border-box;
+        padding: 20px;
+        font-size: 24px;
+        text-align: center;
+        overflow: hidden;
+        scroll-snap-align: start;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="story-frame">Frame 1</div>
+    <div class="story-frame">Frame 2</div>
+    <div class="story-frame">Frame 3</div>
+    <!-- Add more frames as needed -->
+
+    <!-- Optional: Navigation Arrows -->
+    <button onclick="scrollStory(-1)">❮</button>
+    <button onclick="scrollStory(1)">❯</button>
+
+    <script>
+      function scrollStory(direction) {
+        document.body.scrollLeft += direction * window.innerWidth;
+      }
+    </script>
+  </body>
+</html>
